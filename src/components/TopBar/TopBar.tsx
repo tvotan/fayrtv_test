@@ -25,19 +25,19 @@ export class NewRoomButton extends React.Component<{ size?: string }> {
     return (
       <Popup
         content="Create a new room with a random URL that you can share with friends"
-        // trigger={
-        //   <Button
-        //     color="blue"
-        //     size={this.props.size as any}
-        //     icon
-        //     labelPosition="left"
-        //     onClick={this.createRoom}
-        //     className="toolButton"
-        //   >
-        //     <Icon name="certificate" />
-        //     WatchParty
-        //   </Button>
-        // }
+        trigger={
+          <Button
+            color="blue"
+            size={this.props.size as any}
+            icon
+            labelPosition="left"
+            onClick={this.createRoom}
+            className="toolButton"
+          >
+            <Icon name="certificate" />
+            WatchParty
+          </Button>
+        }
       />
     );
   }
